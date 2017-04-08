@@ -1,10 +1,28 @@
 <div *ngIf="team">
-  <h2>{{team.name}} details!</h2>
+  <h2>{{team.name}} details</h2>
   <div>
-    <label>id: </label>{{team.id}}</div>
+    <label>id: </label>{{team.id}}
+  </div>
   <div>
     <label>name: </label>
     <input [(ngModel)]="team.name" placeholder="name" />
+  </div>
+  <div>
+    <label>State: </label>{{team.location}}
+  </div>
+  <div>
+    <table>
+      <tr>
+        <td>
+          <label>Superbowls: </label>
+        </td>
+        <td>
+          <div style="margin-left: 50px">
+            {{team.superbowls}}
+          </div>
+        </td>
+      </tr>
+    </table>
   </div>
   <button (click)="goBack()">Back</button>
 </div>

@@ -13,12 +13,18 @@ var team_service_1 = require("./team.service");
 var DashboardComponent = (function () {
     function DashboardComponent(teamService) {
         this.teamService = teamService;
-        this.teams = [];
+        this.teams1 = [];
+        this.teams2 = [];
+        this.teams3 = [];
+        this.teams4 = [];
     }
     ;
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.teamService.getTeams().then(function (teams) { return _this.teams = teams.slice(0, 4); });
+        this.teamService.getTeams().then(function (teams) { return _this.teams1 = teams.slice(0, 4); });
+        this.teamService.getTeams().then(function (teams) { return _this.teams2 = teams.slice(4, 8); });
+        this.teamService.getTeams().then(function (teams) { return _this.teams3 = teams.slice(8, 12); });
+        this.teamService.getTeams().then(function (teams) { return _this.teams4 = teams.slice(12, 16); });
     };
     return DashboardComponent;
 }());

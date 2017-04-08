@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of Teams';
+        this.title = '';
     }
     return AppComponent;
 }());
@@ -16,7 +16,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         styleUrls: ['./app.component.css'],
-        template: "\n    <h1>{{title}}</h1>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n      <a routerLink=\"/teams\" routerLinkActive=\"active\">Teams</a>\n    </nav>\n    <router-outlet></router-outlet>\n  "
+        template: "\n    <h1>{{title}}</h1>\n    <div>\n      <img width=\"175px\" src=\"https://www.seeklogo.net/wp-content/uploads/2015/08/NFL-team-logos-vector.png\"/>\n    </div>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n      <a routerLink=\"/teams\" routerLinkActive=\"active\">Teams</a>\n    </nav>\n    <router-outlet></router-outlet>\n  "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
